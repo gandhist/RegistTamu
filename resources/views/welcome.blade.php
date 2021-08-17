@@ -87,7 +87,7 @@
 
         <div class="content">
 
-            @if ($message)
+            @if (session()->has('message'))
                 <div class="alert alert-success" role="alert">
                     {{ $message }}
                 </div>

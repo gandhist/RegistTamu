@@ -43,6 +43,21 @@
                             </div>
 
                             <div class="form-group row">
+                                <label for="card" class="col-md-4 col-form-label text-md-right">ID Card</label>
+
+                                <div class="col-md-6">
+                                    <input id="card" type="card" class="form-control @error('card') is-invalid @enderror"
+                                        name="card" required autocomplete="new-card">
+
+                                    @error('card')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+                            </div>
+
+                            <div class="form-group row">
                                 <label for="remarks" class="col-md-4 col-form-label text-md-right">Remarks</label>
 
                                 <div class="col-md-6">

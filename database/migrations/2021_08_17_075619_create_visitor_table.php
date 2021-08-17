@@ -17,6 +17,7 @@ class CreateVisitorTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string('name');
+            $table->string('card');
             $table->string('remarks');
             $table->string('email');
         });
